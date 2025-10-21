@@ -10,8 +10,8 @@ $color-button-text: #f4f3f1;
 
 
 // === FONTS ===
-$font-heading: 'DM Serif Display', serif;
-$font-primary: 'Inter', sans-serif;
+$font-heading: 'DM Serif Display', serif !default;
+$font-primary: 'Inter', sans-serif !default;
 
 
 $font-size-base: 16px;
