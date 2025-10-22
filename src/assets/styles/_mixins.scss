@@ -1,0 +1,19 @@
+
+@mixin flex(
+    $justify: center,
+    $align: center,
+    $direction: row
+    ) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin min-height-width(
+    $height:auto,
+    $width: auto
+    ) {
+    min-height: $height;
+    min-width: $width;
+}

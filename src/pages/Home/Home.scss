@@ -1,27 +1,49 @@
-@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/forward.scss" as forward;
 
 .containerEbook{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    min-width: 300px;
-    background-color: $color-background-main;
+    @include forward.flex();
+    @include forward.min-height-width(600px, 300px);
+    background-color: forward.$color-background-main;
 }
 
 .containerEbookText{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 70p;
-    padding-bottom: 70px;
-    background-color: $color-background-main;
+    @include forward.flex($direction: column);
+    @include forward.min-height-width(600px);
+    background-color: forward.$color-background-main;
+    padding: 70px 0px;
     gap: 10px;
 }
 
 .ebookText{
-    width: 330px;
+    width: 300px;
     text-align: center;
     margin-bottom: 10px;
+}
+
+.containerAboutBook{
+    @include forward.flex($direction: column);
+    @include forward.min-height-width(700px);
+    background-color: forward.$color-background-secondary;
+    gap: 25px;
+}
+
+.aboutBook{
+    width: 300px;
+    text-align: center;
+}
+.headerCards{
+    @include forward.flex($direction: column);
+    min-height: 100px;
+    padding-top: 100px;
+    width: auto;
+    gap:40px;
+    text-align: center;
+    background-color: forward.$color-background-main;
+    
+    .containerCards{
+        @include forward.flex();
+        min-height:min-content;
+        padding-bottom: 100px;
+        flex-wrap: wrap;
+    }
 }

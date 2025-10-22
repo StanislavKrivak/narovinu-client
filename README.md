@@ -34,3 +34,8 @@
 - Designed book image in Inkspace and exported to `assets/images/`
 - Loaded first mobile view in browser
 - Fourth commit to GitHub
+
+- Created Card and Footer
+- Added barrel files
+- mini feractored
+- Fifth commit to GitHub

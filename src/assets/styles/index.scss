@@ -1,4 +1,4 @@
-@use "./variables" as *;
+@use "./forward" as *;
 
 // === GLOBAL RESETS ===
 * {
@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 // === BASE STYLE ===
 @font-face {
@@ -24,6 +23,9 @@
     font-style: normal;
     font-display: swap;
   }
+  html, body {
+    background-color: $color-background-main;
+  }
 
 body {
     font-family:$font-primary;
@@ -40,11 +42,19 @@ h1 {
     line-height: $line-height-base;
 }
 
-
-h2{
+h2 {
     font-size: $font-size-h2;
 }
 
 h3 {
     font-size: $font-size-h3;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    background-color: $color-background-main;
+    font-size: $font-size-footer;
 }
