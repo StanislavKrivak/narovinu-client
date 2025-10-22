@@ -28,3 +28,9 @@
 - Set base styles for body, h1, h2, h3
 - Render "Hello world" on the page to test font loading
 - Third commit to GitHub
+
+### Mobile First
+- Created `pages/Home/` and `components/ui/` (Button, Img)
+- Designed book image in Inkspace and exported to `assets/images/`
+- Loaded first mobile view in browser
+- Fourth commit to GitHub
