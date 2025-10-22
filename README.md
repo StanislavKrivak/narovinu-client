@@ -1,11 +1,11 @@
 ## Roadmap
-
-#### Setup
+---
+### Setup
 - Installed: Vite, React, TypeScript, SASS, React Router DOM
 - Cleaned up initial files and prepared structure
 - First commit to GitHub
-
-#### Core Parameters
+---
+### Core Parameters
 - Archetype: *Friend*
 - Figma: Initial design draft created
 - Fonts:
@@ -20,22 +20,22 @@
     - Button: `#9a8e55`
     - Button text: `#f4f3f1`
 - Second commit to GitHub
-
-#### Add fonts
+---
+### Add fonts
 - Download and include font files (*DM Serif Display*, *Inter*)
 - Create `index.scss`
 - Apply basic global resets (margin, padding, box-sizing)
 - Set base styles for body, h1, h2, h3
 - Render "Hello world" on the page to test font loading
 - Third commit to GitHub
-
+---
 ### Mobile First
 - Created `pages/Home/` and `components/ui/` (Button, Img)
 - Designed book image in Inkspace and exported to `assets/images/`
 - Loaded first mobile view in browser
 - Fourth commit to GitHub
-
-- Created Card and Footer
-- Added barrel files
-- mini feractored
+---
+- Created `Card` and `Footer`
+- Added barrel files `icons.ts`, `ui/index.ts` and `forward.scss`
+- minor refactor
 - Fifth commit to GitHub
