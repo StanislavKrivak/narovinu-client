@@ -1,0 +1,28 @@
+input::placeholder {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999; // volitelné
+  }
+
+  input[type="number"] {
+    appearance: textfield;   // standardní vlastnost
+    -moz-appearance: textfield; // Firefox
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;           // standard
+    -webkit-appearance: none;   // WebKit
+    margin: 0;
+  }
+
+  input{
+    height: 48px;
+    width: 200px;
+    padding: 0px 5px;
+    border-radius: 10px;
+    border-color: #999;
+    border: none;
+    background-color: #f5f0f0;
+  }

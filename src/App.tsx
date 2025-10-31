@@ -1,15 +1,29 @@
 import "./assets/styles/index.scss";
 import Home from "./pages/Home/Home";
-import Footer from "./components/layout/Footer/Footer";
+import { Form } from "./components/ui/index";
+import { Layout } from "./components/layout/Layout/Layout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
 
   return (
-      <div>
-        <Home />
-        <Footer/>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="create" element={<Form />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
   )
 }
 
 export default App
+
+/*
+<div>
+        <Home />
+        <Form/>
+        <Footer/>
+      </div>
+*/

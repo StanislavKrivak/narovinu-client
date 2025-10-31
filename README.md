@@ -11,7 +11,7 @@
 - Fonts:
     - Heading font: `'DM Serif Display', serif`
     - Primary font: `'Inter', sans-serif`
-    - Sizes: 16px, h1: 2.5rem, h2: 1.6rem, h3: 1.5rem
+    - Sizes: 16px, h1: 3.5rem, h2: 1.6rem, h3: 1.5rem
 - Colors:
     - Main background: `#e5cf79`
     - Secondary background: `#dccdb8`
@@ -39,3 +39,8 @@
 - Added barrel files `icons.ts`, `ui/index.ts` and `forward.scss`
 - minor refactor
 - Fifth commit to GitHub
+---
+- Created `Input` and `Form`
+- Updated `App` and join with `Layout`
+- Added `BrowserRouter` and `Outlet`
+- Sixth commit to GitHub
