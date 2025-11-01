@@ -1,0 +1,7 @@
+@use "../../../assets/styles/mixins" as mixins;
+
+.containerForm{
+    @include mixins.flex($direction:column);
+    gap: 15px;
+    min-height: 95vh;
+}

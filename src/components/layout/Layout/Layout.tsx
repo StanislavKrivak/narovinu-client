@@ -5,9 +5,9 @@ export function Layout() {
     return (
       <>
         <main>
-        <Outlet />
-      </main>
-      <Footer />
+          <Outlet />
+        </main>
+        <Footer />
       </>
     );
   }

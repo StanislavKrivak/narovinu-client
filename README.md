@@ -44,3 +44,8 @@
 - Updated `App` and join with `Layout`
 - Added `BrowserRouter` and `Outlet`
 - Sixth commit to GitHub
+---
+- Created `Checkbox`
+- Added `useNavigate`
+- General refactor
+- Seventh commit to GitHub

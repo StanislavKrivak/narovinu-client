@@ -1,10 +1,16 @@
 import { Img, Card, Button } from "../../components/ui";
 import imageBook from "../../assets/images/ebook.png";
 import { iconLocation, iconLight, iconTimes } from "../../assets/images/icons";
+import { useNavigate } from "react-router-dom";
 import "./Home.scss"
 
 
 export default function Home(){
+    
+    const navigate = useNavigate();
+    
+    function handlerBuy(){ navigate("form")}
+    
     return (
         <>
             <div className="containerEbook">
@@ -15,7 +21,7 @@ export default function Home(){
                 <h3>Tohle vám nikdo neřekne.</h3>
                 <p className="ebookText">Upřímná a klidná kniha o tom, jak přemýšlet o penězích jinak. Ale také o rovnováze mezi jistotou a životem.</p>
                 <Button text="Stáhnout ukázku zdarma"/>
-                <Button text="Koupit e-book"/>
+                <Button text="Koupit e-book" onClick={handlerBuy}/>
             </div>
             <div className="containerAboutBook">
                 <h2>O knize</h2>
@@ -40,7 +46,7 @@ export default function Home(){
                 <p className="aboutBook">
                     A právě o tom tahle kniha je. O skutečných příbězích, o zkušenostech, o tom, co peníze v našem životě opravdu znamenají. Nechci nic přikrášlovat. Chci o tom mluvit na rovinu – tak, jak bychom si o tom povídali mezi čtyřma očima po letech důvěry.
                 </p>
-                <Button text="Koupit e-book"/>
+                <Button text="Koupit e-book" onClick={handlerBuy}/>
             </div>
         </>
     )

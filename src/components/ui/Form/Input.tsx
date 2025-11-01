@@ -1,6 +1,6 @@
 import "./Input.scss";
 
-type inputProps = {
+type InputProps = {
     type: string;
     placeholder: string;
     value: string;
@@ -9,7 +9,7 @@ type inputProps = {
     required: boolean;
 }
 
-export function Input({type, placeholder, value, onChange, name, required}:inputProps){
+export function Input({type, placeholder, value, onChange, name, required}:InputProps){
     return (
         <input 
             type={type}

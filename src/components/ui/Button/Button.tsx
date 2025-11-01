@@ -1,10 +1,10 @@
 import "./Button.scss";
 
-type buttonProps = {
+type ButtonProps = {
     text: string;
     onClick?: ()=> void;
 }
 
-export function Button({text, onClick}: buttonProps){
+export function Button({text, onClick}: ButtonProps){
     return <button className="button" onClick={onClick}>{text}</button>
 }

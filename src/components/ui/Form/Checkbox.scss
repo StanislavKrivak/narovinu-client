@@ -1,0 +1,14 @@
+.checkbox{
+    height: 15px;
+    color: rgb(175, 112, 112);
+    width: 50px;;
+
+}
+
+.linkCheckbox {
+    color: rgb(98, 96, 96);
+    text-decoration: none;
+    &:hover{
+        color: rgb(13, 63, 164);
+    }
+}
